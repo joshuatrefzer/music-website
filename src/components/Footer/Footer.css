@@ -1,0 +1,5 @@
+footer {
+    min-height: 300px;
+    background: linear-gradient(rgba(220, 220, 220, 0), rgba(232, 224, 204, 0.311));
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+
+.navigation {
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(233, 231, 231, 0.688);
+    border-radius: 30px ;
+    height: fit-content;
+    padding: 20px 30px;
+    width: fit-content;
+    max-width: 700px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px 5px rgba(103, 103, 103, 0.1);
+    animation: appearFromTop 2s ease forwards;
+}
+
+@keyframes appearFromTop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.active {
+  opacity: 0.7 !important;
+}
+
+
+.navigation-links {
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
