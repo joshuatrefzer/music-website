@@ -4,12 +4,49 @@
     align-items: center;
 }
 
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
 .center-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.seperator {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgb(157, 157, 157);
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.button-primary {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    cursor: pointer;
+    border: 2px solid var(--color-text);
+    transition: background-color 0.4s ease;
+}
+
+.button-primary:hover {
+    border: 2px solid var(--color-text);
+    background-color: var(--color-link);
+    color: var(--color-background);
 }
 
 .component-animation {
