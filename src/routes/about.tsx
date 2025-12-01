@@ -34,7 +34,7 @@ export default function About() {
           <p>Soul Musik vom Feinsten. <br /> Hier spiele ich als Saxophonist und leite die Bläser Section der Band und schreibe die Bläser- Arrangements</p>
 
 
-          <h2 class="headline">Meine Reise</h2>
+          <h2 class="headline">My Journey</h2>
           <p>Bereits mit 6 Jahren begann meine Reise als Musiker mit den ersten Klavierstunden. <br />
             Mit 8 Jahren wechselte ich zum Saxophon und begann meine Ausbildung bei <a target="_blank" href="https://www.musikschule-zenopeters.de/"> Zeno Peters.</a></p>
           <p>Diese Jahre waren sehr prägend für meine Musikalische Entwicklung. <br />
