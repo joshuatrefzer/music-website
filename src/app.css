@@ -1,10 +1,13 @@
 @import url("./base.css");
 
 :root {
-  --color-background: #f6f5f1;
+  --color-background: #e9e8e2;
+  --color-light: #d4d1c4;
   --color-text: #343434;
   --color-link: hsl(0, 0%, 24%);
 }
+
+
 
 
 @font-face {
@@ -92,9 +95,8 @@ h1 {
 }
 
 p {
-  max-width: 14rem;
-  margin: 2rem auto;
   line-height: 1.35;
+  min-width: 100%;
 }
 
 @media (min-width: 480px) {

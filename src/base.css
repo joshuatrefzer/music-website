@@ -4,6 +4,35 @@
     align-items: center;
 }
 
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.text-with-gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .text-container {
+        width: 40%;
+    }
+    .gallery-container {
+        width: 60%;
+    }
+}
+
 .justify-center {
     display: flex;
     justify-content: center;
@@ -61,6 +90,7 @@ main {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }

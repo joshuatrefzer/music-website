@@ -1,20 +1,39 @@
-import { useLocation } from "@solidjs/router";
+import { createSignal } from "solid-js";
 import "./Navigation.css";
 
 export default function Navigation() {
-  const location = useLocation();
+  const [isOpen, setIsOpen] = createSignal(false);
 
-  const isActive = (path: string) =>
-    location.pathname === path ? "active" : "";
+  const toggleMenu = () => setIsOpen(!isOpen());
+  const closeMenu = () => setIsOpen(false);
+
+  const links = [
+    { path: "/", label: "Home" },
+    { path: "/offer", label: "Angebot" },
+    { path: "/about", label: "Über mich" },
+    { path: "/booking", label: "Buchung" },
+    { path: "/contact", label: "Kontakt" },
+  ];
 
   return (
-    <nav class="navigation content-center">
-      <a class={`navigation-links ${isActive("/")}`} href="/">Home</a>
-      <a class={`navigation-links ${isActive("/offer")}`} href="/offer">Angebot</a>
-      <a class={`navigation-links ${isActive("/about")}`} href="/about">Über mich</a>
-      <a class={`navigation-links ${isActive("/booking")}`} href="/booking">Buchung</a>
-      <a class={`navigation-links ${isActive("/contact")}`} href="/contact">Kontakt</a>
-      
-    </nav>
+    <>
+      {/* Burger Icon */}
+      <div class={`burger ${isOpen() ? "open" : ""}`} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Fullscreen Menu */}
+      <nav class={`mobile-nav ${isOpen() ? "open" : ""}`}>
+        <ul>
+          {links.map(link => (
+            <li onClick={closeMenu}>
+              <a href={link.path}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </>
   );
 }

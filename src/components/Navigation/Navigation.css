@@ -1,36 +1,97 @@
-
-.navigation {
-    z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.422);
-    backdrop-filter: blur(10px);
-    border-radius: 15px ;
-    height: fit-content;
-    padding: 20px 30px;
-    width: fit-content;
-    max-width: 700px;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 1px 1px 5px rgba(103, 103, 103, 0.1);
-    animation: appearFromTop 2s ease forwards;
+/* BURGER ICON */
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: rgb(61, 114, 114);
+  border: 3px solid #d4d1c4;
+  padding: 13px 10px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease;
 }
 
-@keyframes appearFromTop {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.burger:hover {
+  opacity: 0.8;
 }
 
-.active {
-  opacity: 0.7 !important;
+.burger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #d4d1c4;
+  border-radius: 2px;
+  transition: 0.4s;
 }
 
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
 
-.navigation-links {
-    font-size: 1rem;
-    transition: opacity 0.3s ease;
+/* FULLSCREEN NAV */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(92, 150, 150);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1050;
+}
+
+.mobile-nav.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-nav li {
+  margin: 20px 0;
+  font-size: 2rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-nav.open li {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-nav li a {
+  text-decoration: none;
+  color: #d4d1c4;
+  font-weight: 600;
+}
+
+/* Optional: Hover effect */
+.mobile-nav li a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }

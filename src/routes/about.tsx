@@ -2,8 +2,16 @@ import { Title } from "@solidjs/meta";
 import Hero from "~/components/Hero/Hero";
 
 import "./about.css";
+import CssOnlyImageGallery from "~/components/ImageGallery/ImageGallery";
 
 export default function About() {
+
+  const imgs = [
+    "img/loop1.JPG",
+    "img/loop2.JPG",
+    "img/loop3.JPG"
+  ];
+
   return (
     <main>
       <Title>Über mich</Title>
@@ -14,15 +22,28 @@ export default function About() {
       ></Hero>
 
       <div class="justify-center">
-        <div class="content-container">
+        <div class="content-container w-full">
           <h2 class="headline">Meine Projekte</h2>
-          <h3>Loopstation Projekt</h3>
-          <p>Heute spiele ich vor allem Musik, die ich selbst sehr gerne höre. <br />
-            Mein Solo Projekt mit Loopstation Gitarre und Saxophon ist mein Aushängeschild. <br /> Kaum etwas mache ich so gerne wie das. Viele Jaher an technischer Tüftelei stecken in diesem Projekt.</p>
 
-          <p>Hier kommt Musikproduktion, Arrangement und Improvisation zusammen.</p>
-          <p>Ich spiele mit diesem Projekt sehr viele Pop Songs, von denen ich meine eigene Version spiele. <br /> Alles aufgepimpt mit Jazzharmonien, knackig, luftigen Grooves und gesampelten Elementen..</p>
-          <i>Soulify</i> Everrything! ♡
+
+          <div class=""></div>
+          <div class="text-container">
+            <h3>Loopstation Projekt</h3>
+            <p>Heute spiele ich vor allem Musik, die ich selbst sehr gerne höre. <br />
+              Mein Solo Projekt mit Loopstation Gitarre und Saxophon ist mein Aushängeschild. <br /> Kaum etwas mache ich so gerne wie das. Viele Jaher an technischer Tüftelei stecken in diesem Projekt.</p>
+
+            <p>Hier kommt Musikproduktion, Arrangement und Improvisation zusammen.</p>
+            <p>Ich spiele mit diesem Projekt sehr viele Pop Songs, von denen ich meine eigene Version spiele. <br /> Alles aufgepimpt mit Jazzharmonien, knackig, luftigen Grooves und gesampelten Elementen..</p>
+            <i>Soulify</i> Everrything! ♡
+          </div>
+
+          <div class="gallery-container">
+            <CssOnlyImageGallery
+              images={imgs}
+            />
+          </div>
+
+
 
           <span class="seperator"></span>
           <h3>Deep House + Sax</h3>
