@@ -1,6 +1,7 @@
 
 import { Title } from "@solidjs/meta";
 import Hero from "~/components/Hero/Hero";
+import "./contact.css";
 
 export default function Contact() {
     return (
@@ -13,7 +14,7 @@ export default function Contact() {
             ></Hero>
 
             <div class="justify-center">
-                <form class="content-container w-full">
+                <form class="content-container contact-form w-full">
                     <h2 class="headline">Deine Nachricht</h2>
                     <div class="input-container">
                         <label for="name">Name:</label>
@@ -27,7 +28,7 @@ export default function Contact() {
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit">Send</button>
+                    <button class="button-primary" type="submit">Nachricht senden</button>
                 </form>
             </div>
         </main>     

@@ -1,0 +1,15 @@
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.contact-form button {
+    align-self: center;
+}

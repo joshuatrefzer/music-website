@@ -11,23 +11,28 @@
     width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     margin-top: 5px;
     box-sizing: border-box;
+    background-color: rgb(49, 57, 57);
+    border: var(--color-text) 2px solid;
 }
 
 .text-with-gallery-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 500px;
 
     .text-container {
         width: 40%;
     }
+
     .gallery-container {
         width: 60%;
     }
@@ -50,12 +55,32 @@ input, textarea {
     margin-top: 10px;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.one-pager-navigation {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    background-color: var(--color-background);
+}
+
 .seperator {
     display: block;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 50px;
-    width: 100%;
-    border-bottom: 1px solid rgb(157, 157, 157);
+    width: 90%;
+    align-self: center;
+    border-bottom: 0.5px solid rgb(157, 157, 157);
 }
 
 button {
@@ -74,7 +99,7 @@ button {
 
 .button-primary:hover {
     border: 2px solid var(--color-text);
-    background-color: var(--color-link);
+    background-color: var(--color-text);
     color: var(--color-background);
 }
 
@@ -93,5 +118,59 @@ main {
 
     to {
         opacity: 1;
+    }
+}
+
+.w-full {
+    width: 100%;
+}
+
+
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery-container img {
+    width: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.content-container {
+    align-self: center;
+    text-align: center;
+    padding: 0 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 0 20px;
+        text-align: left;
     }
 }

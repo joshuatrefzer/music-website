@@ -14,7 +14,7 @@
   background-color: rgb(61, 114, 114);
   border: 3px solid #d4d1c4;
   padding: 13px 10px;
-  border-radius: 50%;
+  border-radius: 20px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   transition: opacity 0.5s ease;
 }
