@@ -41,11 +41,20 @@ footer p {
     width: calc(100% - 2rem - 40px);
 }
 
+@media (max-width: 768px) {
+    .site-footer {
+        gap: 10px;
+        padding: 1rem;
+        width: calc(100% - 1rem - 20px);
+    }
+}
+
 .full-row {
     display: flex;
     width: 90%;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .svg-link img {

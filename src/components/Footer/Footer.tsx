@@ -31,7 +31,7 @@ export default function Footer() {
     }
 
     return (
-        <footer class="site-footer">
+        <footer class="site-footer mt-50">
             <span class="footer-separator"></span>
 
             <div class="full-row">
@@ -44,14 +44,8 @@ export default function Footer() {
             </div>
 
 
-
-
-            <div class="row-between">
-                <div>© 2024 Joshua Trefzer</div>
-                <div class="legal-links">
-                    {renderLegals()}
-                </div>
-                <div><i>Soulify</i> Everrything! ♡</div>
+            <div class="legal-links">
+                {renderLegals()}
             </div>
 
             <span class="footer-separator"></span>
