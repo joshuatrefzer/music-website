@@ -2,3 +2,73 @@ footer {
     min-height: 300px;
     width: 100%;
 }
+
+footer p {
+    color: var(--color-text);
+}
+
+
+.footer-separator {
+    --space: 10px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: calc(100% - (var(--space) * 2));
+    margin-left: var(--space);
+    border-top: 0.2px solid var(--color-link);
+    border-radius: 5px;
+}
+
+.legals {
+    color: var(--color-text);
+    font-size: 0.9rem;
+}
+
+.row-between {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+    width: calc(100% - 2rem - 40px);
+}
+
+.full-row {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.svg-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.svg-link {
+    background-color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-links {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a:hover {
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+}

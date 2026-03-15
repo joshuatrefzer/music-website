@@ -9,8 +9,8 @@ export default function Contact() {
             <Title>Contact</Title>
             <Hero
                 imageUrl="img/saxhero.webp"
-                subtitle="Ich freue mich auf deine Nachricht!"
-                headline="Contact me!"
+                subtitle="Ich freue mich auf Deine Nachricht!"
+                headline="KONTAKT"
             ></Hero>
 
             <div class="justify-center">
@@ -25,7 +25,7 @@ export default function Contact() {
                         <input type="email" id="email" name="email" required />
                     </div>
                     <div class="input-container">
-                        <label for="message">Message:</label>
+                        <label for="message">Nachricht:</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
                     <button class="button-primary" type="submit">Nachricht senden</button>

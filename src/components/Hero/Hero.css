@@ -50,9 +50,14 @@
 }
 
 .hero-button {
+    font-family: "Abel";
     z-index: 99;
     position: absolute;
     right: 2rem;
     bottom: 2rem;
-    color: var(--color-light);
+    color: var(--color-background);
+    text-decoration: none;
+    background-color: var(--color-text);
+    padding:15px 20px;
+    border-radius: 20px;
 }

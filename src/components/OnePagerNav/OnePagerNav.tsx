@@ -1,3 +1,5 @@
+import "./OnePagerNav.css";
+
 export interface OnePagerNavProp {
     id: string;
     label: string;

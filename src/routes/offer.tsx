@@ -16,7 +16,7 @@ export default function Offer() {
       <Title>Meine Projekte</Title>
       <Hero
         imageUrl="img/hero1.webp"
-        subtitle=""
+        subtitle="& All About Music"
         headline="Meine Projekte"
       ></Hero>
 
@@ -49,9 +49,6 @@ export default function Offer() {
           </div>
 
         </section>
-
-
-
 
 
         <span class="seperator"></span>
