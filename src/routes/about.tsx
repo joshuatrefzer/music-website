@@ -25,8 +25,7 @@ export default function About() {
         imageUrl="img/urban.webp"
         subtitle="Soulify Everything ♡"
         headline="Soul, HipHop & Jazz"
-        buttonLink="/offer"
-        buttonText="Angebot entdecken"
+
       ></Hero>
 
       <OnePagerNav links={onepagerNavLinks} />
@@ -48,13 +47,9 @@ export default function About() {
 
           <h3>Studium</h3>
           <p id="studium">Nach dem Abitur studierte ich in Mannheim <i>Jazz und Popularmusik.</i> Dort lernte ich sehr viel über Musikproduktion, Harmonielehre, Arrangieren und Improvisation.</p>
-          <h3>Dirigat & Arrangements</h3>
-          <p id="heute">Seit 2001 leite ich das Orchester des <a class="link" href="https://www.musikverein-zunsweier.de/">Musikverein Zunsweier.</a>
-            <br /> Ich habe für das Orchester zahlreiche Arrangements geschrieben und aufgeführt.
-          </p>
-          Frage mich gerne an für ein Auftragsarrangement.
-          <br />
-          <button class="button-primary mt-10">Arrangement anfragen</button>
+          <p>Ich arbeitete während des Studiums 3 Jahre in Tonstudio der Hochschule und lernte Musik zu mischen und aufzunehmen.</p>
+         
+
 
         </div>
       </div>
