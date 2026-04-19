@@ -16,7 +16,7 @@ export default function Offer() {
       <Hero
         imageUrl="img/hero-projects.jpg"
         subtitle="& All About Music"
-        headline="Meine Projekte"
+        headline="My Projects"
       ></Hero>
 
       <OnePagerNav links={onepagerNavLinks} />
@@ -40,7 +40,7 @@ export default function Offer() {
             <img src="img/loop3.JPG" alt="Loopstation Projekt" />
           </div>
 
-          <h2>Flexibel & spontan - mit dem Sound einer ganzen Band</h2>
+          <h2 class="mt-50">Flexibel & spontan - mit dem Sound einer ganzen Band</h2>
           <p>Da ich hier alleine unterwegs bin, kann ich sehr flexibel auf verschiedene Situationen reagieren und spontan auf die Bedürfnisse der Zuschauer eingehen. <br />
             Auch die Absprache und Buchung ist unkompliziert, zuverlässig und schnell abgewickelt. </p>
           <p>Ich bin nicht abhängig von externen Dienstleistern und habe bei Bedarf meine eigene Tontechnik dabei.</p>
@@ -72,7 +72,7 @@ export default function Offer() {
           <img src="img/elektro2.JPG" alt="Elektro &  Sax Projekt" />
         </div>
 
-        <h4>Rooftop Bars, Afterwork, Open Air Events..</h4>
+        <h4 class="mt-50">Rooftop Bars, Afterwork, Open Air Events..</h4>
         <p>Wer liebt es nicht? <br />
           Ein kühles Getränk, schönes Wetter und treibende eletronische Beats mit Saxophon Sounds. <br /> So stelle zumindest Ich mir ein schönes Warming Up von einem erfolgreichen Event vor.</p>
 
@@ -97,7 +97,7 @@ export default function Offer() {
           <img style={"height:200px;"} src="img/conduct-2.JPG" alt="Conducting" />
           <img style={"height:200px;"} src="img/conduct-3.JPG" alt="Conducting" />
         </div>
-        <h4>Rock & Pop Medleys | Solo Stücke | Orchester Arrangements mit Gesang</h4>
+        <h4 class="mt-50">Rock & Pop Medleys | Solo Stücke | Orchester Arrangements mit Gesang</h4>
 
         <p >
           In meinem Musikstudium (Jazz & Popularmusik) habe ich mich intensiv mit dem Thema Arrangement beschäftigt. <br />
