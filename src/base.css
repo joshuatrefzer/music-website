@@ -118,8 +118,18 @@ button {
     color: var(--color-background);
 }
 
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .component-animation {
     animation: fadeIn 0.5s ease forwards;
+}
+
+.mst {
+    scroll-margin-top: 100px;
 }
 
 main {

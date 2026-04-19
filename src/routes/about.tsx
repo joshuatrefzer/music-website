@@ -35,21 +35,21 @@ export default function About() {
 
 
 
-          <h3>Meine Jugend</h3>
+          <h3 class="mst" id="jugend">Meine Jugend</h3>
           <p id="jugend">Bereits mit 6 Jahren begann meine Reise als Musiker mit den ersten Klavierstunden. <br />
             Mit 8 Jahren wechselte ich zum Saxophon und begann meine Ausbildung bei <a target="_blank" class="link" href="https://www.musikschule-zenopeters.de/"> Zeno Peters.</a></p>
-          <p>Diese Jahre waren sehr prägend für meine Musikalische Entwicklung. <br />
+          <p> Diese Jahre waren sehr prägend für meine Musikalische Entwicklung. <br />
             Ich nam regelmäßig am Wettbewerb  <i>Jugend Musiziert</i>  teil und konnte einige Preise gewinnen im Ensemble als auch in der Solo Wertung.</p>
-          <p>Mit 14 Jahren begann ich mich immer mehr für Pop und Soul Musik zu interessieren. Ich lernte autodidaktisch Gitarre und begann sehr viel zu experimentieren.</p>
-          Mit 16 Jahren startete ich mein Solo Projekt mit Loopstation, Gitarre und Saxophon.
+          Mit 14 Jahren begann ich mich immer mehr für Pop und Soul Musik zu interessieren. <br /> Ich lernte autodidaktisch Gitarre und begann sehr viel zu experimentieren.
+          <p>Mit 16 Jahren startete ich mein Solo Projekt mit Loopstation, Gitarre und Saxophon.</p>
 
 
 
-          <h3>Studium</h3>
-          <p id="studium">Nach dem Abitur studierte ich in Mannheim <i>Jazz und Popularmusik.</i> Dort lernte ich sehr viel über Musikproduktion, Harmonielehre, Arrangieren und Improvisation.</p>
+          <h3 class="mst" id="studium">Studium</h3>
+          <p>Nch dem Abitur wollte ich in Mannheim Jazz und Popularmusik studieren und bereitete mich intensiv auf die Aufnahmeprüfungen vor mit der Hilfe von Johannes Reinhuber. </p>
+          <p id="studium">Nach dem Abitur studierte ich in Mannheim <i>Jazz und Popularmusik.</i><br />  Dort lernte ich sehr viel über Musikproduktion, Harmonielehre, Arrangieren und Improvisation.</p>
           <p>Ich arbeitete während des Studiums 3 Jahre in Tonstudio der Hochschule und lernte Musik zu mischen und aufzunehmen.</p>
-         
-
+        
 
         </div>
       </div>

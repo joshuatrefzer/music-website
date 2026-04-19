@@ -7,15 +7,14 @@ export default function Offer() {
   const onepagerNavLinks = [
     { id: "loop-project", label: "Loop Station" },
     { id: "electro-sax", label: "Elektro + Sax" },
-    { id: "arrangements", label: "Arrangements" },
-    { id: "orchesterleitung", label: "Orchesterleitung" }
+    { id: "arrangements", label: "Arrangements & Orchesterleitung" },
   ];
 
   return (
     <main>
       <Title>Meine Projekte</Title>
       <Hero
-        imageUrl="img/hero1.webp"
+        imageUrl="img/hero-projects.jpg"
         subtitle="& All About Music"
         headline="Meine Projekte"
       ></Hero>
@@ -25,7 +24,7 @@ export default function Offer() {
       <div class="content-container w-full">
         <section class="content-card" >
           <div class="text-container">
-            <h3>Loopstation Projekt</h3>
+            <h3 class="mst" id="loop-project">Loopstation Projekt</h3>
             <p>Heute spiele ich vor allem Musik, die ich selbst sehr gerne höre. <br />
               Mein Solo Projekt mit Loopstation Gitarre und Saxophon ist mein Aushängeschild. <br /> Kaum etwas mache ich so gerne wie das. Viele Jahre an technischer Tüftelei stecken in diesem Projekt.</p>
 
@@ -64,7 +63,7 @@ export default function Offer() {
 
 
         <span class="seperator"></span>
-        <h3>Elektro &  Sax</h3>
+        <h3 class="mst" id="electro-sax">Elektro &  Sax</h3>
         <p>Ich produziere seit meiner Schulzeit elektronische Musik, die ich auch auflege und dazu Saxophon spiele. <br />Ich lege hierbei nur sehr ausgewählte Sounds auf und bin nicht als DJ in dieser Form unterwegs. <br />
           Stilistisch handelt es sich hier um Deep-House, Melodic-House, Down Tempo mit Saxophon on Top.</p>
 
@@ -79,36 +78,48 @@ export default function Offer() {
 
         <p>Häufig spiele ich aber zusammen mit meinem Kollegen und langjährigen Freund und DJ <a class="link" href="https://www.bikebalance.de/">Christian Gehrmann</a> <br />  Urbane Elektro Sounds, gepaart mit Funky Saxophon Riffs!</p>
         Wir spielen zusammen in Rooftop Bars, auf Outdoor Events und überall sonst wo es eine lockere urbane Atmosphäre braucht, <br />die später in einem amtlichen DJ Set mündet. <br />
-        
+
         <div class="gallery-container">
-          <img style={"height:350px;"} src="img/elektro1.JPG" alt="Elektro &  Sax Projekt" />
+          <img style={"height:300px;"} src="img/elektro1.JPG" alt="Elektro &  Sax Projekt" />
         </div>
 
 
         <span class="seperator"></span>
 
 
-        <h3 id="arrangements" >Arrangements</h3>
+        <h3 class="mst" id="arrangements" >Arrangements & <br /> Orchesterleitung</h3>
         Ich schreibe seit vielen Jahren Arrangements für Bläser, Orchester und Big Band. <br />
-        Seit 2017 bin ich als Dirigent tätig und habe für verscheidenste Formationen schon etliche Arrangements geschrieben<br />
+        Seit 2017 bin ich als Dirigent tätig und habe für verscheidenste Formationen schon etliche Arrangements geschrieben.<br />
+
+
+        <div class="gallery-container">
+          <img style={"height:200px;"} src="img/conduct-1.JPG" alt="Conducting" />
+          <img style={"height:200px;"} src="img/conduct-2.JPG" alt="Conducting" />
+          <img style={"height:200px;"} src="img/conduct-3.JPG" alt="Conducting" />
+        </div>
         <h4>Rock & Pop Medleys | Solo Stücke | Orchester Arrangements mit Gesang</h4>
-        
 
-        <p>Es macht mir sehr viel Spaß die Arrangements die ich schreibe, auch aufzuführen und mit den Menschen einzustudieren, meist bin ich an diesen Projekten mit beteiligt.</p>
-        <p>Das Handwerk ist mir sehr wichtig, allerdings finde ich, das Arrangement muss zu den Menschen passen, die es spielen werden.</p>
-        <p>Frage mich gerne an für ein Auftragsarrangement.</p>
+        <p >
+          In meinem Musikstudium (Jazz & Popularmusik) habe ich mich intensiv mit dem Thema Arrangement beschäftigt. <br />
+          Es macht mir sehr viel Spaß die Arrangements die ich schreibe,  <br />
+          auch aufzuführen und mit den Menschen einzustudieren, meist bin ich an diesen Projekten mit beteiligt.
+          <br />Ich finde, dass Arrangements zu den Menschen passen müssen, die es spielen sollen.<br />
+        </p>
 
-        <div><button class="button-primary">Arrangement anfragen</button></div>
+        <p>Frage mich gerne an für ein Projekt</p>
+
+        <div>
+          <a href="/contact">
+            <button class="button-primary">Kontakt
+            </button>
+          </a>
+        </div>
 
 
 
 
 
-        <span class="seperator"></span>
-        <h3 id="orchesterleitung">Orchesterleitung</h3>
-        Seit 2001 leite ich das Orchester des Musikvereins Zunsweier. <br />
-        Es macht mir sehr viel Spaß mit dem Orchester zu arbeiten, neue Stücke einzustudieren und die Musiker zu motivieren. <br />
-        Ich habe schon viele Konzerte mit dem Orchester gespielt, von Klassik über Pop bis hin zu Filmmusik. <br />
+
 
       </div>
     </main>
