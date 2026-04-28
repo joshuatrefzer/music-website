@@ -81,3 +81,11 @@ footer p {
     transition: opacity 0.3s ease;
     opacity: 0.8;
 }
+
+@media (max-width: 550px) {
+    .footer-link-row {
+        justify-content: center !important;
+    }
+
+
+}

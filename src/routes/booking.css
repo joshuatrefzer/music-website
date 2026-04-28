@@ -1,0 +1,13 @@
+
+
+.wizard {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: var(--radius);
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}

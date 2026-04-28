@@ -34,7 +34,7 @@ export default function Footer() {
         <footer class="site-footer mt-50">
             <span class="footer-separator"></span>
 
-            <div class="full-row">
+            <div class="full-row footer-link-row">
                 {renderPages()}
             </div>
 

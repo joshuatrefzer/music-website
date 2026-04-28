@@ -59,7 +59,7 @@ export default function About() {
             Noch heute ist Thorsten ein großes Vorbild für mich.
           </p>
           <p>Im Studium hatte ich Unterricht bei meinen Professoren Jürgen Seefelder und <a class="link" href="https://www.stefankarlschmid.net/">Stefan Karl Schmid</a> <br /> Welche mein Spielen und meine musikalischen Fährigkeiten wohl am meisten geprägt haben.</p>
-
+          <img class="full-width-img" src="img/way.jpg" alt="Elektro &  Sax Projekt" />
 
           <h3 id="heute" class="mst">Heute</h3>
           <p>Heute bin ich hauptsächlich mit meinem Solo Projekt unterwegs und spiele auf vielen Events.<br />
@@ -69,7 +69,11 @@ export default function About() {
             <br />
             Man wird sehen, wohin es noch weiter geht!
           </p>
-          <img style={"max-height: 550px; object-fit: cover"} src="img/way.jpg" alt="Elektro &  Sax Projekt" />
+          <div class="gallery-container">
+            <img src="img/about-section1.jpg" alt="Elektro &  Sax Projekt" />
+            <img src="img/about-section2.jpg" alt="Elektro &  Sax Projekt" />
+            <img src="img/about-section3.jpg" alt="Elektro &  Sax Projekt" />
+          </div>
           Soulify Everrything! ♡
 
         </div>
