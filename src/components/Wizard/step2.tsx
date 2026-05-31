@@ -4,27 +4,27 @@ export const Step2 = {
   id: "step2",
 
   component: () => (
-    <div>
-      <h2>Produkt</h2>
+    <div class="wizard-step-container">
 
-      <select
-        value={booking.product}
-        onChange={(e) => setBooking("product", e.currentTarget.value as "sax" | "loop" | "custom")}
-      >
-        <option value="sax">Saxophon + Elektro</option>
-        <option value="loop">Loop Station</option>
-        <option value="custom">Individuell</option>
-      </select>
-
-      <h2>Dauer</h2>
+      <div class="input-container">
+        <h4>Wo ist dein Event?</h4>
+        <p>Gebe hier die Adresse der Location an</p>
+        <textarea
+          placeholder="Adresse"
+          value={booking.adress || ""}
+          onInput={(e) => setBooking("adress", e.currentTarget.value)}
+        />
+        <p>Wie viele Gäste werden teilnehmen?</p>
       <input
-        type="number"
-        onInput={(e) =>
-          setBooking("duration", Number(e.currentTarget.value))
-        }
+        type="text"
+        placeholder="Grobe Anzahl der Gäste"
+        value={booking.guests || ""}
+        onInput={(e) => setBooking("guests", e.currentTarget.value)}
       />
+      </div>
+      
     </div>
   ),
 
-  validate: () => !!booking.product,
+  validate: () => !!booking.adress && !!booking.guests,
 };

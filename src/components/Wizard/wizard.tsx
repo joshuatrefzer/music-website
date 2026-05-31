@@ -1,6 +1,7 @@
 // components/Wizard/Wizard.tsx
 import { createSignal } from "solid-js";
 import type { WizardStep } from "./types";
+import "./wizard.css";
 
 export default function Wizard(props: { steps: WizardStep[] }) {
     const [stepIndex, setStepIndex] = createSignal(0);
@@ -22,14 +23,14 @@ export default function Wizard(props: { steps: WizardStep[] }) {
     };
 
     return (
-        <div>
+        <div class="wizard-container">
             <Progress steps={props.steps.length} current={stepIndex()} />
 
             <div class="mt-8">
                 {currentStep().component()}
             </div>
 
-            <div class="flex gap-4 mt-6">
+            <div class="wizard-navigation">
                 <button onClick={back} disabled={stepIndex() === 0}>
                     Zurück
                 </button>
@@ -47,16 +48,33 @@ export default function Wizard(props: { steps: WizardStep[] }) {
 
 function Progress(props: { steps: number; current: number }) {
     return (
-        <div class="flex gap-4">
-            {Array.from({ length: props.steps }).map((_, i) => (
-                <div
-                    class={`w-8 h-8 flex items-center justify-center rounded-full 
-          ${i === props.current ? "bg-black text-white" : "bg-gray-300"}
-          transition-all duration-300`}
-                >
-                    {i + 1}
-                </div>
-            ))}
+        <div class="wizard-progress">
+            {Array.from({ length: props.steps }).map((_, i) => {
+                const isCompleted = i < props.current;
+                const isReached = i <= props.current;
+
+                return (
+                    <>
+                        <div
+                            class="wizard-step-indicator"
+                            classList={{
+                                "wizard-step-indicator-active": isReached,
+                            }}
+                        >
+                            {isCompleted ? "✓" : i + 1}
+                        </div>
+
+                        {i < props.steps - 1 && (
+                            <div
+                                class="wizard-step-line"
+                                classList={{
+                                    "wizard-step-line-active": isCompleted,
+                                }}
+                            />
+                        )}
+                    </>
+                );
+            })}
         </div>
     );
 }

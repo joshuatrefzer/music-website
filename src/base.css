@@ -12,7 +12,7 @@
 }
 
 input,
-textarea {
+textarea, select {
     font-family: "Abel";
     font-size: 20px;
     letter-spacing: 1.5px;

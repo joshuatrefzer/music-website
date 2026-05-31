@@ -148,3 +148,9 @@ p {
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width:780px) {
+  .hide-mobile {
+    display: none;
+  }
+}

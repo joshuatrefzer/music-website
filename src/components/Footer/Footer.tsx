@@ -31,7 +31,7 @@ export default function Footer() {
     }
 
     return (
-        <footer class="site-footer mt-50">
+        <footer class="site-footer">
             <span class="footer-separator"></span>
 
             <div class="full-row footer-link-row">
@@ -49,7 +49,6 @@ export default function Footer() {
             </div>
 
             <span class="footer-separator"></span>
-
         </footer>
     );
 }

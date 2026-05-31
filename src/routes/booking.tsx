@@ -17,6 +17,7 @@ export default function Booking() {
         headline="Booking"
       ></Hero>
 
+      <h3 class="hide-mobile">Deine Anfrage</h3>
       <Wizard steps={[Step1, Step2, Step3]} />
     </main>
   );
