@@ -10,6 +10,8 @@ export type BookingData = {
   product?: "sax" | "loop" | "custom";
   duration?: number;
   soundSystem?: boolean;
+  message?: string;
+  email?: string;
 };
 
 export const [booking, setBooking] = createStore<BookingData>({});

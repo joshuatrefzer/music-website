@@ -6,6 +6,7 @@ import { Step3 } from "~/components/Wizard/step3";
 import Wizard from "~/components/Wizard/wizard";
 
 import "./booking.css";
+import { Step4 } from "~/components/Wizard/step4";
 
 export default function Booking() {
   return (
@@ -18,7 +19,7 @@ export default function Booking() {
       ></Hero>
 
       <h3 class="hide-mobile">Deine Anfrage</h3>
-      <Wizard steps={[Step1, Step2, Step3]} />
+      <Wizard steps={[Step1, Step2, Step3, Step4]} />
     </main>
   );
 }

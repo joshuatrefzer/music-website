@@ -42,11 +42,16 @@
     background-color: var(--color-link);
 }
 
+.date-input::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1) sepia(0.25) saturate(0.6) hue-rotate(10deg) brightness(1.8);
+}
+
 .wizard-container {
     width: 90%;
     max-width: 400px;
     margin: 0 auto;
-    min-height: 400px;
+    min-height: 515px;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;

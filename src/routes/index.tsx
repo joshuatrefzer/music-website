@@ -14,7 +14,7 @@ export default function Home() {
       <div class="content-container w-full">
 
         <section>
-          <h3 class="mst">Soul.  HipHop.  Jazz. Elektro.</h3>
+          <h3 class="mst">Soul.  HipHop.  Jazz.</h3>
           <p>Meine Musik ist immer geprägt von diesem Mix. Ich höre selbst gerne diese Musik und spiele sie noch lieber selbst! <br />
             Ich spiele projektbasiert immer wieder bei verschiedenen Projekten mit und bin aber primär selbst mit meinem Solo Projekt unterwegs. <br />
           </p>
@@ -50,15 +50,7 @@ export default function Home() {
             </a>
           </div>
         </section>
-
-
-
-
       </div>
-
-
-
-
     </main>
   );
 }
