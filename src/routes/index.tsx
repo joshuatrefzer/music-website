@@ -7,18 +7,18 @@ export default function Home() {
       <Title>Home</Title>
       <Hero
         imageUrl="img/hero1.webp"
-        subtitle="Saxophonist, Loop Artist & Arrangeur, Produzent.."
-        headline="Ich bin JOSH"
+        subtitle="Saxophonist, Loop Artist & Arrangeur"
+        headline="Ich bin Josh"
       ></Hero>
 
       <div class="content-container w-full">
 
         <section>
           <h3 class="mst">Soul.  HipHop.  Jazz.</h3>
-          <p>Meine Musik ist immer geprägt von diesem Mix. Ich höre selbst gerne diese Musik und spiele sie noch lieber selbst! <br />
-            Ich spiele projektbasiert immer wieder bei verschiedenen Projekten mit und bin aber primär selbst mit meinem Solo Projekt unterwegs. <br />
+          <p>Meine Musik ist immer geprägt von diesem Cocktail. Ich höre selbst gerne diese Musik und spiele sie noch lieber selbst! <br />
+            Ich spiele als Saxophonist immer wieder bei verschiedenen Projekten mit, bin aber primär selbst mit meinem Solo Projekt unterwegs. <br />
           </p>
-          <p>Ich liebe urbane Musik. Ich spiele selbst nur Musik die ich liebe, also ist meine Musik immer irgendwie urban!</p>
+          <p>Meine Leidenschaft für urbane Musik habe ich bereits in frühen Jahren entwickelt. <br />Ich spiele heute selbst nur noch Musik die ich liebe, also ist meine Musik immer irgendwie urban!</p>
           <p>Soulify Everrything! ♡</p>
           <div class="gallery-container">
             <img src="img/git.jpg" alt="Elektro &  Sax Projekt" />

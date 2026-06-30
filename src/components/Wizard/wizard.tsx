@@ -31,11 +31,11 @@ export default function Wizard(props: { steps: WizardStep[] }) {
             </div>
 
             <div class="wizard-navigation">
-                <button onClick={back} disabled={stepIndex() === 0}>
+                <button class="button-primary" onClick={back} disabled={stepIndex() === 0}>
                     Zurück
                 </button>
 
-                <button onClick={next}>
+                <button class="button-primary" onClick={next}>
                     {stepIndex() === props.steps.length - 1
                         ? "Absenden"
                         : "Weiter"}

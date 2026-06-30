@@ -8,7 +8,7 @@ export const Step2 = {
 
       <div class="input-container">
         <h4>Wo ist dein Event?</h4>
-        <p>Gebe hier die Adresse der Location an</p>
+        <p>Gib hier die Adresse der Location an</p>
         <textarea
           placeholder="Adresse"
           value={booking.adress || ""}

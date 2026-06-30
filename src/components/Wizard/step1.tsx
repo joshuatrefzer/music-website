@@ -8,7 +8,7 @@ export const Step1 = {
     <div class="wizard-step-container">
       <div class="input-container">
         <h4>Wann ist dein Event?</h4>
-        <p>Gebe hier den Tag des Events an</p>
+        <p>Gib hier den Tag des Events an</p>
         <input
           class="date-input"
           type="date"
@@ -16,7 +16,7 @@ export const Step1 = {
           onInput={(e) => setBooking("date", e.currentTarget.value)}
         />
 
-        <p>Gebe hier an, wann meine Spielzeit beginnen und enden soll</p>
+        <p>Gib hier an, wann meine Spielzeit beginnen und enden soll</p>
         <div class="time-inputs">
           Von
           <input

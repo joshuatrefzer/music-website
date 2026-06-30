@@ -9,7 +9,7 @@ export const Step4 = {
             <div class="input-container">
                 <h4>Kontakt</h4>
 
-                <p>Gebe deine Mail Adresse an, damit ich mich mit dir in Verbindung setzen kann.</p>
+                <p>Gib deine Mail Adresse an, damit ich mich mit dir in Verbindung setzen kann.</p>
                 <input
                     type="email"
                     placeholder="E-Mail Adresse"
@@ -19,7 +19,7 @@ export const Step4 = {
 
 
                 <h4>Nachricht</h4>
-                <p>Gebe hier noch eine Nachricht ein, vor allem bei individuellen Wünschen.</p>
+                <p>Gib hier noch eine Nachricht ein, vor allem bei individuellen Wünschen.</p>
                 <textarea
                     placeholder="Nachricht"
                     value={booking.message || ""}
