@@ -7,6 +7,7 @@ export const PAGES = [
     { path: "/contact", label: "Kontakt" },
 ];
 
+
 export const LEGALS = [
     { path: "/impressum", label: "Impressum" },
     { path: "/datenschutz", label: "Datenschutz" }

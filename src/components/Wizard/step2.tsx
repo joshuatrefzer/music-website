@@ -5,7 +5,6 @@ export const Step2 = {
 
   component: () => (
     <div class="wizard-step-container">
-
       <div class="input-container">
         <h4>Wo ist dein Event?</h4>
         <p>Gib hier die Adresse der Location an</p>
@@ -22,7 +21,6 @@ export const Step2 = {
         onInput={(e) => setBooking("guests", e.currentTarget.value)}
       />
       </div>
-      
     </div>
   ),
 

@@ -13,9 +13,9 @@ export default function About() {
   ];
 
   const imgs = [
-    "img/loop1.JPG",
-    "img/loop2.JPG",
-    "img/loop3.JPG"
+    "img/loop1.jpg",
+    "img/loop2.jpg",
+    "img/loop3.jpg"
   ];
 
   return (

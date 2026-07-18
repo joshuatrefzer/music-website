@@ -8,7 +8,7 @@ export default function Footer() {
             if (social.url) {
                 return (
                     <a class="svg-link" href={social.url} target="_blank" rel="noopener noreferrer">
-                        <img src={"/icons/" + social.name.toLocaleLowerCase() + ".svg"} alt={social.name} />
+                        <img src={"icons/" + social.name.toLocaleLowerCase() + ".svg"} alt={social.name} />
                     </a>
                 );
             }

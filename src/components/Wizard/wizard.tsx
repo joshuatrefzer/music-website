@@ -2,6 +2,8 @@
 import { createSignal } from "solid-js";
 import type { WizardStep } from "./types";
 import "./wizard.css";
+import { sendMail } from "~/mailservice/send-mail";
+import { booking } from "~/stores/bookingStore";
 
 export default function Wizard(props: { steps: WizardStep[] }) {
     const [stepIndex, setStepIndex] = createSignal(0);
@@ -22,6 +24,29 @@ export default function Wizard(props: { steps: WizardStep[] }) {
         }
     };
 
+    async function handleSubmit(event: Event) {
+        event.preventDefault();
+        const aggregatedInfos = booking.date + " " + booking.starttime + " - " + booking.endtime + "\n" +
+            booking.adress + "\n" +
+            booking.guests + " Gäste\n" +
+            booking.product + "\n" +
+            (booking.soundSystem ? "Sound System: Ja\n" : "Sound System: Nein\n") +
+            booking.message;
+
+            if (!booking.email) {
+                alert("Bitte gib deine E-Mail-Adresse an.");
+                return;
+            }
+
+        const success = await sendMail("Booking Request", booking.email, aggregatedInfos)();
+        if (success) {
+            alert("Nachricht erfolgreich gesendet!");
+            setStepIndex(0);
+        } else {
+            alert("Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut.");
+        }
+    }
+
     return (
         <div class="wizard-container">
             <Progress steps={props.steps.length} current={stepIndex()} />
@@ -35,11 +60,16 @@ export default function Wizard(props: { steps: WizardStep[] }) {
                     Zurück
                 </button>
 
-                <button class="button-primary" onClick={next}>
-                    {stepIndex() === props.steps.length - 1
-                        ? "Absenden"
-                        : "Weiter"}
+
+            {stepIndex() === props.steps.length - 1 ? (
+                <button class="button-primary" onClick={handleSubmit}>
+                    Absenden
                 </button>
+            ) : (
+                <button class="button-primary" onClick={next}>
+                    Weiter
+                </button>
+            )}
             </div>
         </div>
     );

@@ -41,7 +41,7 @@
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
-        height: 100vh;
+        height: 100dvh;
         background-position: 65% center;
     }
 

@@ -8,7 +8,6 @@ export type BookingData = {
   adress?: string;
   guests?: string;
   product?: "sax" | "loop" | "custom";
-  duration?: number;
   soundSystem?: boolean;
   message?: string;
   email?: string;

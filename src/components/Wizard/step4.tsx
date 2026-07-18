@@ -25,9 +25,7 @@ export const Step4 = {
                     value={booking.message || ""}
                     onInput={(e) => setBooking("message", e.currentTarget.value)}
                 />
-
             </div>
-
         </div>
     ),
 

@@ -35,9 +35,9 @@ export default function Offer() {
           </div>
 
           <div class="gallery-container">
-            <img src="img/loop1.JPG" alt="Loopstation Projekt" />
-            <img src="img/loop2.JPG" alt="Loopstation Projekt" />
-            <img src="img/loop3.JPG" alt="Loopstation Projekt" />
+            <img src="img/loop1.jpg" alt="Loopstation Projekt" />
+            <img src="img/loop2.jpg" alt="Loopstation Projekt" />
+            <img src="img/loop3.jpg" alt="Loopstation Projekt" />
           </div>
 
           <h2 class="mt-50">Flexibel & spontan - mit dem Sound einer ganzen Band</h2>
@@ -68,8 +68,8 @@ export default function Offer() {
           Stilistisch handelt es sich hier um Deep-House, Melodic-House, Down Tempo mit Saxophon on Top.</p>
 
         <div class="gallery-container">
-          <img src="img/walk.JPG" alt="Elektro &  Sax Projekt" />
-          <img src="img/elektro2.JPG" alt="Elektro &  Sax Projekt" />
+          <img src="img/walk.jpg" alt="Elektro &  Sax Projekt" />
+          <img src="img/elektro2.jpg" alt="Elektro &  Sax Projekt" />
         </div>
 
         <h4 class="mt-50">Rooftop Bars, Afterwork, Open Air Events..</h4>
@@ -80,7 +80,7 @@ export default function Offer() {
         Wir spielen zusammen in Rooftop Bars, auf Outdoor Events und überall sonst wo es eine lockere urbane Atmosphäre braucht, <br />die später in einem amtlichen DJ Set mündet. <br />
 
         <div class="gallery-container">
-          <img style={"height:300px;"} src="img/elektro1.JPG" alt="Elektro &  Sax Projekt" />
+          <img style={"height:300px;"} src="img/elektro1.jpg" alt="Elektro &  Sax Projekt" />
         </div>
 
 
@@ -93,9 +93,9 @@ export default function Offer() {
 
 
         <div class="gallery-container">
-          <img style={"height:200px;"} src="img/conduct-1.JPG" alt="Conducting" />
-          <img style={"height:200px;"} src="img/conduct-2.JPG" alt="Conducting" />
-          <img style={"height:200px;"} src="img/conduct-3.JPG" alt="Conducting" />
+          <img style={"height:200px;"} src="img/conduct-1.jpg" alt="Conducting" />
+          <img style={"height:200px;"} src="img/conduct-2.jpg" alt="Conducting" />
+          <img style={"height:200px;"} src="img/conduct-3.jpg" alt="Conducting" />
         </div>
         <h4 class="mt-50">Rock & Pop Medleys | Solo Stücke | Orchester Arrangements mit Gesang</h4>
 
@@ -108,7 +108,7 @@ export default function Offer() {
 
         <p>Frage mich gerne an für ein Projekt</p>
 
-        <div>
+        <div class="center">
           <a href="/contact">
             <button class="button-primary">Kontakt
             </button>

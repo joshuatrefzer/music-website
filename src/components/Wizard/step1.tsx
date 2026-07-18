@@ -1,6 +1,37 @@
 // steps/Step1.tsx
 import { booking, setBooking } from "~/stores/bookingStore";
 
+const HOUR_OPTIONS = Array.from({ length: 14 }, (_, i) => i + 10).flatMap((hour) => [
+  {
+    value: `${hour.toString().padStart(2, "0")}:00`,
+    label: `${hour.toString().padStart(2, "0")}:00 Uhr`,
+  },
+  {
+    value: `${hour.toString().padStart(2, "0")}:30`,
+    label: `${hour.toString().padStart(2, "0")}:30 Uhr`,
+  },
+]);
+
+const HourSelect = (props: {
+  value: string;
+  placeholder?: string;
+  onChange: (value: string) => void;
+}) => (
+  <select
+    class="date-input"
+    value={props.value}
+    onChange={(e) => props.onChange(e.currentTarget.value)}
+  >
+    <option value="">{props.placeholder || "Uhrzeit wählen"}</option>
+
+    {HOUR_OPTIONS.map(({ value, label }) => (
+      <option value={value}>
+        {label}
+      </option>
+    ))}
+  </select>
+);
+
 export const Step1 = {
   id: "step1",
 
@@ -9,6 +40,7 @@ export const Step1 = {
       <div class="input-container">
         <h4>Wann ist dein Event?</h4>
         <p>Gib hier den Tag des Events an</p>
+
         <input
           class="date-input"
           type="date"
@@ -16,28 +48,21 @@ export const Step1 = {
           onInput={(e) => setBooking("date", e.currentTarget.value)}
         />
 
-        <p>Gib hier an, wann meine Spielzeit beginnen und enden soll</p>
+        <p>Gib hier die gewünschte Spielzeit an</p>
+
         <div class="time-inputs">
-          Von
-          <input
-            class="date-input"
-            type="time"
+          <HourSelect
+            placeholder="Startzeit"
             value={booking.starttime || ""}
-            onInput={(e) => setBooking("starttime", e.currentTarget.value)}
+            onChange={(value) => setBooking("starttime", value)}
           />
-          bis
-          <input
-            class="date-input"
-            type="time"
+          <HourSelect
+            placeholder="Endzeit"
             value={booking.endtime || ""}
-            onInput={(e) => setBooking("endtime", e.currentTarget.value)}
+            onChange={(value) => setBooking("endtime", value)}
           />
-
         </div>
-
       </div>
-
-
     </div>
   ),
 
