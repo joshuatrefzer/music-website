@@ -87,7 +87,7 @@ export default function Offer() {
         <span class="seperator"></span>
 
 
-        <h3 class="mst" id="arrangements" >Arrangements & <br /> Orchesterleitung</h3>
+        <h3 class="mst breakable-headline" id="arrangements" >Arrangements & <br /> Orchesterleitung</h3>
         Ich schreibe seit vielen Jahren Arrangements für Bläser, Orchester und Big Band. <br />
         Seit 2017 bin ich als Dirigent tätig und habe für verscheidenste Formationen schon etliche Arrangements geschrieben.<br />
 

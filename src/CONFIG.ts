@@ -9,8 +9,8 @@ export const PAGES = [
 
 
 export const LEGALS = [
-    { path: "/impressum", label: "Impressum" },
-    { path: "/datenschutz", label: "Datenschutz" }
+    { path: "/imprint", label: "Impressum" },
+    { path: "/legals", label: "Datenschutz" }
 ];
 
 export const SOCIALS = [
