@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="150" height="150" style="--logo-color:#d4d1c4">
+                <title>JT Vinyl Icon</title>
+                <desc>Monochrome vinyl record mark with JT monogram. Change the --logo-color variable on the svg element to recolor everything at once.</desc>
+
+                <defs>
+                    <mask id="grooves" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
+                        <rect x="0" y="0" width="300" height="300" fill="white" />
+                        <circle cx="150" cy="150" r="128" fill="none" stroke="black" stroke-width="4" />
+                        <circle cx="150" cy="150" r="108" fill="none" stroke="black" stroke-width="4" />
+                        <circle cx="150" cy="150" r="88" fill="none" stroke="black" stroke-width="4" />
+                        <circle cx="150" cy="150" r="68" fill="none" stroke="black" stroke-width="4" />
+                        <circle cx="150" cy="150" r="42" fill="black" />
+                    </mask>
+                </defs>
+
+                <circle cx="150" cy="150" r="140" style="fill:var(--logo-color)" mask="url(#grooves)" />
+
+            </svg>

@@ -1,16 +1,16 @@
 
 export const PAGES = [
     { path: "/", label: "Home" },
-    { path: "/offer", label: "Angebot" },
-    { path: "/about", label: "Über mich" },
-    { path: "/booking", label: "Buchung" },
-    { path: "/contact", label: "Kontakt" },
+    { path: "/projekte", label: "Projekte" },
+    { path: "/ueber-mich", label: "Über mich" },
+    { path: "/buchung", label: "Buchung" },
+    { path: "/kontakt", label: "Kontakt" },
 ];
 
 
 export const LEGALS = [
-    { path: "/imprint", label: "Impressum" },
-    { path: "/legals", label: "Datenschutz" }
+    { path: "/Impressum", label: "Impressum" },
+    { path: "/Datenschutz", label: "Datenschutz" }
 ];
 
 export const SOCIALS = [

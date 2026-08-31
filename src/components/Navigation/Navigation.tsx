@@ -7,7 +7,7 @@ export default function Navigation() {
 
   const toggleMenu = () => setIsOpen(!isOpen());
   const closeMenu = () => setIsOpen(false);
-
+  
   return (
     <>
       {/* Burger Icon */}
@@ -19,6 +19,7 @@ export default function Navigation() {
 
       {/* Fullscreen Menu */}
       <nav class={`mobile-nav ${isOpen() ? "open" : ""}`}>
+      
         <ul>
           {PAGES.map(link => (
             <li onClick={closeMenu}>

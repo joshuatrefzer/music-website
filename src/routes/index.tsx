@@ -4,9 +4,9 @@ import Hero from "~/components/Hero/Hero";
 export default function Home() {
   return (
     <main>
-      <Title>Home</Title>
+      <Title>Musik für ihr Event</Title>
       <Hero
-        imageUrl="img/hero1.webp"
+        imageUrl="/img/hero1.webp"
         subtitle="Saxophonist, Loop Artist & Arrangeur"
         headline="Ich bin Josh"
       ></Hero>
@@ -20,8 +20,8 @@ export default function Home() {
           <p>Meine Leidenschaft für urbane Musik habe ich bereits in frühen Jahren entwickelt. </p>
           <p>Soulify Everrything! ♡</p>
           <div class="gallery-container">
-            <img src="img/git.jpg" alt="Elektro &  Sax Projekt" />
-            <img src="img/soul.jpg" alt="Elektro &  Sax Projekt" />
+            <img src="/img/git.webp" alt="Elektro &  Sax Projekt" />
+            <img src="/img/soul.webp" alt="Elektro &  Sax Projekt" />
           </div>
           <h3 class="mt-50">
             Musik für Ihr Event <br />
@@ -39,7 +39,7 @@ export default function Home() {
             Gerne gestalte ich Ihre Veranstaltung mit individueller Musik, die sich perfekt an den Anlass und Ihre Wünsche anpasst.
           </p>
           <div class="mt-50" >
-            <a href="/offer">
+            <a href="/projekte">
               <button class="button-primary">
                 Mehr über meine Projekte erfahren →
               </button>
@@ -51,11 +51,11 @@ export default function Home() {
           <h3>About Me</h3>
           <p>Ich mache seit meinem 8. Lebensjahr Musik und habe ein Musikstudium in Jazz & Popularmusik. <br /> Heute habe ich einige Projekte, mit denen ich unterwegs bin und produziere meine eigene Musik.</p>
           <div class="gallery-container">
-            <img src="img/night.jpg" alt="Elektro &  Sax Projekt" />
+            <img src="/img/night.webp" alt="Elektro &  Sax Projekt" />
           </div>
           <p class="mt-50">..Weitere biografische Infos findest du hier</p>
           <div class="mt-50" >
-            <a href="/about">
+            <a href="/ueber-mich">
               <button class="button-primary">
                 Mehr erfahren
               </button>

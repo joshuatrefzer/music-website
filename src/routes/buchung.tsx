@@ -13,7 +13,7 @@ export default function Booking() {
     <main>
       <Title>Buchung</Title>
       <Hero
-        imageUrl="img/booking.jpg"
+        imageUrl="/img/booking.webp"
         subtitle="& Your Event"
         headline="Booking"
       ></Hero>

@@ -4,9 +4,7 @@ import Hero from "~/components/Hero/Hero";
 import "./contact.css";
 import { sendMail } from "~/mailservice/send-mail";
 
-export default function Contact() {
-
-
+export default function Kontakt() {
 
     function handleSubmit(event: Event) {
         event.preventDefault();
@@ -33,9 +31,9 @@ export default function Contact() {
 
     return (
         <main>
-            <Title>Contact</Title>
+            <Title>Kontakt</Title>
             <Hero
-                imageUrl="img/saxhero.webp"
+                imageUrl="/img/saxhero.webp"
                 subtitle="Ich freue mich auf Deine Nachricht!"
                 headline="KONTAKT"
             ></Hero>

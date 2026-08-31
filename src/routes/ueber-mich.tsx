@@ -4,7 +4,7 @@ import Hero from "~/components/Hero/Hero";
 import "./about.css";
 import OnePagerNav, { OnePagerNavProp } from "~/components/OnePagerNav/OnePagerNav";
 
-export default function About() {
+export default function UeberMich() {
 
   const onepagerNavLinks: OnePagerNavProp[] = [
     { id: "jugend", label: "Jugend" },
@@ -13,16 +13,17 @@ export default function About() {
   ];
 
   const imgs = [
-    "img/loop1.jpg",
-    "img/loop2.jpg",
-    "img/loop3.jpg"
+
+    "/img/loop1.webp",
+    "/img/loop2.webp",
+    "/img/loop3.webp"
   ];
 
   return (
     <main>
       <Title>Über mich</Title>
       <Hero
-        imageUrl="img/urban.webp"
+        imageUrl="/img/urban.webp"
         subtitle="Soulify Everything ♡"
         headline="Soul, HipHop & Jazz"
 
@@ -44,9 +45,8 @@ export default function About() {
           <p>Mit 16 Jahren startete ich mein Solo Projekt mit Loopstation, Gitarre und Saxophon.</p>
 
           <div class="gallery-container">
-            <img src="img/about2.jpg" alt="Elektro &  Sax Projekt" />
-            <img src="img/about1.jpg" alt="Elektro &  Sax Projekt" />
-            <img src="img/about3.jpg" alt="Elektro &  Sax Projekt" />
+            <img src="/img/about2.webp" alt="Elektro &  Sax Projekt" />
+            <img src="/img/about1.webp" alt="Elektro &  Sax Projekt" />
           </div>
 
 
@@ -59,7 +59,7 @@ export default function About() {
             Noch heute ist Thorsten ein großes Vorbild für mich.
           </p>
           <p>Im Studium hatte ich Unterricht bei meinen Professoren Jürgen Seefelder und <a class="link" href="https://www.stefankarlschmid.net/">Stefan Karl Schmid</a> <br /> Welche mein Spielen und meine musikalischen Fährigkeiten wohl am meisten geprägt haben.</p>
-          <img class="full-width-img" src="img/way.jpg" alt="Elektro &  Sax Projekt" />
+          <img class="full-width-img" src="img/way.webp" alt="Elektro &  Sax Projekt" />
 
           <h3 id="heute" class="mst">Heute</h3>
           <p>Heute bin ich hauptsächlich mit meinem Solo Projekt unterwegs und spiele auf vielen Events.<br />
@@ -70,9 +70,9 @@ export default function About() {
             Man wird sehen, wohin es noch weiter geht!
           </p>
           <div class="gallery-container">
-            <img src="img/about-section1.jpg" alt="Elektro &  Sax Projekt" />
-            <img src="img/about-section2.jpg" alt="Elektro &  Sax Projekt" />
-            <img src="img/about-section3.jpg" alt="Elektro &  Sax Projekt" />
+            <img src="/img/about-section1.webp" alt="Elektro &  Sax Projekt" />
+            <img src="/img/about-section2.webp" alt="Elektro &  Sax Projekt" />
+            <img src="/img/about-section3.webp" alt="Elektro &  Sax Projekt" />
           </div>
           Soulify Everrything! ♡
 
