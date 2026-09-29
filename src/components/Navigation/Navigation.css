@@ -78,15 +78,20 @@
 }
 
 .mobile-nav li {
-  margin: 20px 0;
-  font-size: 2rem;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+margin: 20px 0;
+font-size: 2rem;
+transition: transform 0.5s ease, opacity 0.5s ease;
+
+/* Startposition: von rechts außerhalb */
+transform: translateX(100px);
+opacity: 0;
 }
 
 .mobile-nav.open li {
-  transform: translateY(0);
-  opacity: 1;
+transform: translateX(0);
+opacity: 1;
 }
+
 
 .mobile-nav li a {
   text-decoration: none;

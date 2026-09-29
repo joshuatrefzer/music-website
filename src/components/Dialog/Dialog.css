@@ -1,0 +1,59 @@
+.dialog-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+}
+
+.dialog {
+    position: relative;
+
+    width: min(500px, calc(100vw - 40px));
+    max-height: calc(100vh - 40px);
+
+    padding: 30px;
+
+    background: #d4d1c4;
+    color: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+    overflow-y: auto;
+}
+
+.dialog h2 {
+    margin-top: 0;
+}
+
+.dialog-content {
+    margin-top: 20px;
+}
+
+.dialog-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+
+    border: 0;
+    background: transparent;
+
+    color: #d4d1c4;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.dialog-close:hover {
+    opacity: 0.7;
+}

@@ -5,21 +5,25 @@ import { Suspense } from "solid-js";
 import "./app.css";
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer";
+import Dialog from "./components/Dialog/Dialog";
 
 export default function App() {
 
   return (
-    <Router
-      root={props => (
-        <MetaProvider>
-          <Title>Joshua Trefzer</Title>
-          <Navigation></Navigation>
-          <Suspense>{props.children}</Suspense>
-          <Footer></Footer>
-        </MetaProvider>
-      )}
-    >
-      <FileRoutes />
-    </Router>
+    <>
+      <Router
+        root={props => (
+          <MetaProvider>
+            <Title>Joshua Trefzer</Title>
+            <Navigation></Navigation>
+            <Suspense>{props.children}</Suspense>
+            <Footer></Footer>
+          </MetaProvider>
+        )}
+      >
+        <FileRoutes />
+      </Router>
+      <Dialog />
+    </>
   );
 }

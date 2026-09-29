@@ -7,27 +7,29 @@ export default function Navigation() {
 
   const toggleMenu = () => setIsOpen(!isOpen());
   const closeMenu = () => setIsOpen(false);
-  
+
   return (
     <>
       {/* Burger Icon */}
-      <div class={`burger ${isOpen() ? "open" : ""}`} onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div class={`burger ${isOpen() ? "open" : ""}`} onClick={toggleMenu}> <span></span> <span></span> <span></span> </div>
 
       {/* Fullscreen Menu */}
       <nav class={`mobile-nav ${isOpen() ? "open" : ""}`}>
-      
+
         <ul>
-          {PAGES.map(link => (
-            <li onClick={closeMenu}>
+          {PAGES.map((link, index) => (
+            <li
+              onClick={closeMenu}
+              style={{
+                "transition-delay": `${index * 0.1}s`
+              }}
+            >
               <a href={link.path}>{link.label}</a>
             </li>
           ))}
         </ul>
       </nav>
     </>
+
   );
 }

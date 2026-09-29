@@ -3,6 +3,7 @@ import { Title } from "@solidjs/meta";
 import Hero from "~/components/Hero/Hero";
 import "./contact.css";
 import { sendMail } from "~/mailservice/send-mail";
+import { openDialog } from "~/components/Dialog/Dialog";
 
 export default function Kontakt() {
 
@@ -17,15 +18,24 @@ export default function Kontakt() {
         sendMail(name, email, message)()
             .then((success) => {
                 if (success) {
-                    alert("Nachricht erfolgreich gesendet!");
+                    openDialog({
+                        title: "Vielen Dank!",
+                        content: "Nachricht wurde erfolgreich gesendet!",
+                    });
                     form.reset();
                 } else {
-                    alert("Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut.");
+                    openDialog({
+                        title: "Fehler",
+                        content: "Fehler beim Senden der Nachricht. Bitte schreiben Sie eine E-Mail an music@joshuatrefzer.de",
+                    });
                 }
             })
             .catch((error) => {
                 console.error(error);
-                alert("Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut.");
+                openDialog({
+                    title: "Fehler",
+                    content: "Fehler beim Senden der Nachricht. Bitte schreiben Sie eine E-Mail an music@joshuatrefzer.de",
+                });
             });
     }
 
@@ -55,6 +65,7 @@ export default function Kontakt() {
                     </div>
                     <button class="button-primary" type="submit">Nachricht senden</button>
                 </form>
+
             </div>
             <dialog class="dialog" id="success-dialog">
                 <p>Nachricht erfolgreich gesendet!</p>

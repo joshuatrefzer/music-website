@@ -4,6 +4,7 @@ import type { WizardStep } from "./types";
 import "./wizard.css";
 import { sendMail } from "~/mailservice/send-mail";
 import { booking } from "~/stores/bookingStore";
+import { openDialog } from "../Dialog/Dialog";
 
 export default function Wizard(props: { steps: WizardStep[] }) {
     const [stepIndex, setStepIndex] = createSignal(0);
@@ -34,16 +35,25 @@ export default function Wizard(props: { steps: WizardStep[] }) {
             booking.message;
 
             if (!booking.email) {
-                alert("Bitte gib deine E-Mail-Adresse an.");
+                openDialog({
+                    title: "Fehler",
+                    content: "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+                });
                 return;
             }
 
         const success = await sendMail("Booking Request", booking.email, aggregatedInfos)();
         if (success) {
-            alert("Nachricht erfolgreich gesendet!");
+            openDialog({
+                title: "Vielen Dank!",
+                content: "Nachricht wurde erfolgreich gesendet!",
+            });
             setStepIndex(0);
         } else {
-            alert("Fehler beim Senden der Nachricht. Bitte versuchen Sie es später erneut.");
+            openDialog({
+                title: "Fehler",
+                content: "Fehler beim Senden der Nachricht. Bitte schreiben Sie eine E-Mail an music@joshuatrefzer.de",
+            });
         }
     }
 

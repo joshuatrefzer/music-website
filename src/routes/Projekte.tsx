@@ -76,9 +76,6 @@ export default function Offer() {
         <p>Wer liebt es nicht? <br />
           Ein kühles Getränk, schönes Wetter und treibende eletronische Beats mit Saxophon Sounds. <br /> So stelle zumindest Ich mir ein schönes Warming Up von einem erfolgreichen Event vor.</p>
 
-        <p>Häufig spiele ich aber zusammen mit meinem Kollegen und langjährigen Freund und DJ <a class="link" href="https://www.bikebalance.de/">Christian Gehrmann</a> <br />  Urbane Elektro Sounds, gepaart mit Funky Saxophon Riffs!</p>
-        Wir spielen zusammen in Rooftop Bars, auf Outdoor Events und überall sonst wo es eine lockere urbane Atmosphäre braucht, <br />die später in einem amtlichen DJ Set mündet. <br />
-
         <div class="gallery-container">
           <img style={"height:300px;"} src="img/elektro1.webp" alt="Elektro &  Sax Projekt" />
         </div>

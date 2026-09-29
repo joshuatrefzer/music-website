@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Existierende Dateien und Verzeichnisse direkt ausliefern
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Alle anderen Requests an die App geben
+RewriteRule ^ /index.html [L]
