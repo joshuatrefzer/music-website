@@ -46,6 +46,10 @@
   filter: brightness(0) invert(1) sepia(0.25) saturate(0.6) hue-rotate(10deg) brightness(1.8);
 }
 
+.time-input::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1) sepia(0.25) saturate(0.6) hue-rotate(10deg) brightness(1.8);
+}
+
 .wizard-container {
     width: 90%;
     max-width: 400px;
@@ -83,8 +87,7 @@
 
 .time-inputs {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
 }

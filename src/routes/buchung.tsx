@@ -5,7 +5,7 @@ import { Step2 } from "~/components/Wizard/step2";
 import { Step3 } from "~/components/Wizard/step3";
 import Wizard from "~/components/Wizard/wizard";
 
-import "./booking.css";
+
 import { Step4 } from "~/components/Wizard/step4";
 
 export default function Booking() {
@@ -13,13 +13,18 @@ export default function Booking() {
     <main>
       <Title>Buchung</Title>
       <Hero
-        imageUrl="/img/booking.webp"
+        imageUrl="/img/booking.webp" 
         subtitle="& Your Event"
         headline="Booking"
       ></Hero>
 
       <h3 class="hide-mobile">Deine Anfrage</h3>
-      <Wizard steps={[Step1, Step2, Step3, Step4]} />
+      <Wizard
+        steps={[Step1, Step2, Step3, Step4].map((step) => ({
+          ...step,
+          validate: () => true,
+        }))}
+      />
     </main>
   );
 }
